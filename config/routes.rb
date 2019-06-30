@@ -7,3 +7,6 @@ Rails.application.routes.draw do
     delete "/contacts/:id" => "contacts#destroy"
   end
 end
+
+# "/contacts/:id/:first_name/:last_name/:email/:phone_number"
+# "/contacts/?id=1&first_name=travis&last_name"
