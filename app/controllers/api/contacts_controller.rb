@@ -15,6 +15,7 @@ class Api::ContactsController < ApplicationController
       last_name: params[:last_name],
       email: params[:email],
       phone_number: params[:phone_number],
+      user_id: current_user.id,
     )
 
     if @contact.save
